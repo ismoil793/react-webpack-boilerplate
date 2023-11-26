@@ -16,7 +16,7 @@ Libraries used in this project
 @@ text in purple (and bold)@@
 
 "devDependencies": {
-    "@babel/core": "^7.23.2",
+    - "@babel/core": "^7.23.2",
     "@babel/preset-react": "^7.22.15",
     "@babel/preset-typescript": "^7.23.2",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.11",
