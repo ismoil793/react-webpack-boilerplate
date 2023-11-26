@@ -1,0 +1,7 @@
+.app-div {
+    background-color: yellow;
+
+    &:hover {
+        background-color: red;
+    }
+}
