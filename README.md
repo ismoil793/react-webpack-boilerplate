@@ -16,13 +16,13 @@ Libraries used in this project
 @@ text in purple (and bold)@@
 
 "devDependencies": {
-    - "@babel/core": "^7.23.2",
++    - "@babel/core": "^7.23.2",
     "@babel/preset-react": "^7.22.15",
     "@babel/preset-typescript": "^7.23.2",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.11",
     "@svgr/webpack": "^8.1.0",
     "@types/babel__core": "^7.20.3",
-    // so that we can write config files (webpack, babel etc.) with typescript
+-    // so that we can write config files (webpack, babel etc.) with typescript
     "@types/node": "^20.8.3",
     // ts support for react
     "@types/react": "^18.2.25",
