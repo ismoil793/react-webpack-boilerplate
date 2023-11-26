@@ -9,7 +9,8 @@
     "build:prod": "webpack --env mode=production",
     "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
     "lint:fix": "eslint --fix \"src/**/*.{js,jsx,ts,tsx}\"",
-    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,css,md}\" --config ./.prettierrc.json"
+    "format:src": "prettier --write \"src/**/*.{js,jsx,ts,tsx,css,md}\" --config ./.prettierrc.json",
+    "format:project": "prettier --write \"**/*.{js,jsx,ts,tsx,css,md}\" --config ./.prettierrc.json"
   },
   "author": "Ismoil Shokirov",
   "license": "ISC",
