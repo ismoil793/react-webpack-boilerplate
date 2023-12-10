@@ -1,27 +1,32 @@
 {
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    "module": "ESNext",
+    "target": "es5",
+    "jsx": "react-jsx", // we can create react components without having to import React from 'react'
+    "allowJs": true,
+    "moduleResolution": "node",
+    // some packages might not have default exports
+    // in this case we would have to import them as eg. "import * as React from 'react'"
+    // ts-loader loader will automatically generate necessary parts "* as"
+    // so that we can do: "import React from 'react'" 
+    "allowSyntheticDefaultImports": true,
+    // allows to work with packages that use commonJS, for example if package is using coomonJS
+    // it will be imported as: import (require() module.exports)
+    // moment uses commonjs, using our flag as true we can import it as ESM module
+    // import Moment from 'moment'
+    "esModuleInterop": true,
+    // needed for webpack alias configuration
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  // we override settings for ts-node to use commonJS
+  "ts-node": {
     "compilerOptions": {
-      "outDir": "./dist/",
-      "noImplicitAny": true,
-      "module": "ESNext",
-      "target": "es5",
-      "jsx": "react-jsx", // we can create react components without having to import React from 'react'
-      "allowJs": true,
-      "moduleResolution": "node",
-      // some packages might not have default exports
-      // in this case we would have to import them as eg. "import * as React from 'react'"
-      // ts-loader loader will automatically generate necessary parts "* as"
-      // so that we can do: "import React from 'react'" 
-      "allowSyntheticDefaultImports": true,
-      // allows to work with packages that use commonJS, for example if package is using coomonJS
-      // it will be imported as: import (require() module.exports)
-      // moment uses commonjs, using our flag as true we can import it as ESM module
-      // import Moment from 'moment'
-      "esModuleInterop": true
-    },
-    // we override settings for ts-node to use commonJS
-    "ts-node": {
-        "compilerOptions": {
-            "module": "CommonJS"
-        }
+      "module": "CommonJS"
     }
   }
+}

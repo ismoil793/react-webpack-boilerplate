@@ -39,11 +39,15 @@ export function buildWebpack(options: BuildOptions): Configuration {
     // resolves extensions when importing from files
     resolve: {
       // we can import ts files like so: import {a} from 'a', instead of import {a} from 'a.ts'
-      extensions: ['.tsx', '.ts', '.js']
+      extensions: ['.tsx', '.ts', '.js'],
+      // useful for absolute importing, @ - is a path to project src
+      alias: {
+        '@': options.paths.src
+      }
     },
     devServer: isDevelopment ? buildDevServer(options) : undefined,
     // helps to generate source map of project
     // to find stack trace of where the error happened
-    devtool: isDevelopment ? 'inline-source-map' : false
+    devtool: isDevelopment ? 'inline-source-map' : 'source-map'
   };
 }
