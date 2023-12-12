@@ -33,7 +33,7 @@ export function buildPlugins(options: BuildOptions): Configuration['plugins'] {
     plugins.push(new ProgressPlugin());
     // improves performance since ts type checking is done in another process
     plugins.push(new ForkTsCheckerWebpackPlugin());
-    // hot module reload (HMR)
+    // hot module replacement (HMR)
     plugins.push(new ReactRefreshWebpackPlugin());
   }
 
