@@ -48,6 +48,7 @@ export function buildWebpack(options: BuildOptions): Configuration {
     devServer: isDevelopment ? buildDevServer(options) : undefined,
     // helps to generate source map of project
     // to find stack trace of where the error happened
+    // more source maps here: https://webpack.js.org/configuration/devtool/
     devtool: isDevelopment ? 'inline-source-map' : 'source-map'
   };
 }
