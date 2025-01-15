@@ -1,3 +1,24 @@
+React Webpack Boilerplate
+==========================
+A comprehensive React boilerplate with Webpack, TypeScript, and best practices for building scalable and maintainable applications.
+Features
+
+Webpack 5: The latest version of Webpack with performance optimizations and improved build times.
+TypeScript: Support for TypeScript enables better code completion, type checking, and maintainability.
+React 18: The latest version of React with improved performance and new features.
+React Router 6: A popular routing library for React applications.
+ESLint and Prettier: Integrated linting and formatting tools for consistent code quality.
+Webpack Bundle Analyzer: Visualize and optimize your bundle size and composition.
+Getting Started
+Clone the repository: git clone https://github.com/ismoil793/react-webpack-boilerplate.git
+Install dependencies: npm install or yarn install
+Start the development server: npm start or yarn start
+Open your browser at http://localhost:8080
+Configuration
+Webpack: Configuration files are located in the config directory.
+TypeScript: Configuration files are located in the config directory.
+ESLint and Prettier: Configuration files are located in the root directory.
+
 Libraries used in this project
 
 ```diff
@@ -71,6 +92,3 @@ Libraries used in this project
 
 Additionally, installing eslint and prettier
 Follow this guide in Medium: https://medium.com/globant/improving-code-quality-in-react-with-eslint-prettier-and-typescript-86635033d803
-
-Credits:
-https://github.com/utimur/webpack-course/tree/master
